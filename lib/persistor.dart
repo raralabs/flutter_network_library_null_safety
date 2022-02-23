@@ -43,7 +43,7 @@ class Response {
           .map((e) => Map<String, dynamic>.from(e))
           .toList();
 
-      return list ?? [];
+      return list;
     } catch (e) {
       return [];
     }
@@ -53,7 +53,7 @@ class Response {
     try {
       Map<String, dynamic> detail = Map<String, dynamic>.from(data['data']);
 
-      return detail ?? {};
+      return detail;
     } catch (e) {
       return {};
     }
